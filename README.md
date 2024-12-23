@@ -1,4 +1,4 @@
-# Inverting the Looking Glass: PolieBotics for Signal-Based Robotics and Embodied Reflection
+# Inverting the Looking Glass: PolieBotics for Differentiable & Cryptographic Signal-Loop Robotics and Embodied Reflection
 
 ------
 
