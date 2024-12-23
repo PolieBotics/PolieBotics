@@ -34,5 +34,5 @@ A PolieBot arises when the PoliePuter’s intelligence is combined with the Trut
 
 
 
-The provenance of PolieBotics is discussed at https://Poliebotics.com or ipfs://QmP8JDfeBCunq4VQ8f6XUbiLJK55dG9jLav7k5q2HpnmxS on InterPlanetary File System (IPFS.) This demo is produced by feeding theory and code to ChatGPT and asking for summaries. Apologies for any error.
+The provenance of PolieBotics is discussed at https://Poliebotics.com or ipfs://QmP8JDfeBCunq4VQ8f6XUbiLJK55dG9jLav7k5q2HpnmxS on IPFS. This demo is produced by feeding theory and code to ChatGPT and asking for summaries. Apologies for any error.
 The demonstration hardware comprises a DLP 4750LC RGB Super Focus/Contrast 1000 lumens - ON AXIS projection emitting a hardware signal triggering an Imaging Source DFK 38UX540 with a 16mm focal-length lens.
