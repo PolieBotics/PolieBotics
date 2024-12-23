@@ -7,10 +7,11 @@
 This invention integrates projectors, cameras, and the physical environment into a continuous feedback loop guided by machine learning and cryptography. By harnessing the environment itself as a computational medium, it enables tamper-evident recording (**Truth Beam®**), data-rich 3D scanning and labeling (**Limager®**), and immersive son-et-lumière transformations (**Reality Transform®**). As these methods evolve, they converge in a core computational engine called the **PoliePuter®**, paving the way for multi-agent **PolieBotics®** that merge secure data handling, privacy-preserving collaboration, and real-time physical adaptation.
 These disclosiers represent a range of development, from the functional protype to promising experiments that may never deliver.
 
-*(Note: In contrast to Locke's thought experiment of a mind as a camera confined to receive external images, these loops actively emit signals that reshape the scene, while simultaneously reinterpreting the feedback. Likewise, where Leibniz's monadology envisioned isolated viewpoints "reflecting" the universe internally, each PoliePuter here interacts through shared, physically grounded fields of light and sound—co-creating an environment that every agent partially 'mirrors,' yet helps define.)*
+*(Note: In contrast to Locke’s though experiment of a mind as a camera confined to receive external images, these loops actively emit signals that reshape the scene, while simultaneously reinterpreting the feedback. Likewise, where Leibniz’s monadology envisioned isolated viewpoints “reflecting” the universe internally, each PoliePuter here interacts through shared, physically grounded fields of light and sound—co-creating an environment that every agent partially ‘mirrors,’ yet helps define.)*
+
 ------
 
-### [Truth Beam](truth_beam.md) (Secure Recording)
+### [Truth Beam](truth_beam.md) (Secure Recording) ([Example Code](https://github.com/PolieBotics/TruthBeam))
 
 The Truth Beam embeds cryptographic elements—structured noise or one-way transforms—into emitted signals, making each recorded capture tamper-evident. Machine learning models are trained to ensure forgeries or manipulations become detectable. This effectively turns physical space into a cryptographically anchored ledger, authenticating data about real-world events. 
 
