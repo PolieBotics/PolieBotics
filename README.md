@@ -5,7 +5,8 @@
 ### Introduction
 The PolieBotics suite was developed independantly by the author, with most of the experiments ultimately becoming a spaghetti mess of various other people's PhD theses running in Docker containers communicating via a network backend. It was informative but not high-performing. ChatGPT is now capable of parsing these scripts and producing equivalent code, explanations, and pseudocode. These are not guarenteed to be free from error, and many do not perform as well as the hand-crafted equivalents in the orignal works that made them possible, but it makes it possible for the author to publish explanations and toy models for public comment.
 The demonstration hardware (PolieProboscis®) comprises a DLP 4750LC RGB Super Focus/Contrast 1000 lumens - ON AXIS projection emitting a hardware signal triggering an Imaging Source DFK 38UX540 with a 16mm focal-length lens. A physical model has been uploaded, but is in need of refinement.
-<img src="PolieProboscis.png" alt="PolieProboscis" width="300" title="Hover Title">
+<br>
+<img src="PolieProboscis.png" alt="PolieProboscis" title="Hover Title">
 
 ### Abstract
 
