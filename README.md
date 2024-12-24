@@ -2,12 +2,17 @@
 
 ------
 
+### Introduction
+The PolieBotics suite was developed independantly by the author, with most of the experiments ultimately becoming a spaghetti mess of various other people's PhD theses running in Docker containers communicating via a network backend. It was informative but not high-performing. ChatGPT is now capable of parsing these scripts and producing equivalent code, explanations, and pseudocode. These are not guarenteed to be free from error, and many do not perform as well as the hand-crafted equivalents in the orignal works that made them possible, but it makes it possible for the author to publish explanations and toy models for public comment.
+The demonstration hardware (PolieProboscis®) comprises a DLP 4750LC RGB Super Focus/Contrast 1000 lumens - ON AXIS projection emitting a hardware signal triggering an Imaging Source DFK 38UX540 with a 16mm focal-length lens. A physical model has been uploaded, but is in need of refinement.
+[Local Image](PolieProboscis.png)
+
 ### Abstract
 
-This invention integrates projectors, cameras, and the physical environment into a continuous feedback loop guided by machine learning and cryptography. By harnessing the environment itself as a computational medium, it enables tamper-evident recording (**Truth Beam®**), data-rich 3D scanning and labeling (**Limager®**), and immersive son-et-lumière transformations (**Reality Transform®**). As these methods evolve, they converge in a core computational engine called the **PoliePuter®**, paving the way for multi-agent **PolieBotics®** that merge secure data handling, privacy-preserving collaboration, and real-time physical adaptation.
+This invention integrates projectors, cameras, and the physical environment into a continuous feedback loop guided by machine learning and cryptography. By harnessing the environment itself as a computational medium, it enables tamper-evident recording (**Truth Beam®**), data-dense 3D scanning and labeling (**Limager®**), and immersive son-et-lumière transformations (**Reality Transform®**). As these methods evolve, they converge in a core computational engine called the **PoliePuter®**, paving the way for multi-agent **PolieBotics®** that merge secure data handling, privacy-preserving collaboration, and real-time physical adaptation.
 These disclosiers represent a range of development, from the functional protype to promising experiments that may never deliver.
 
-*(Note: In contrast to Locke’s though experiment of a mind as a camera confined to receive external images, these loops actively emit signals that reshape the scene, while simultaneously reinterpreting the feedback. Likewise, where Leibniz’s monadology envisioned isolated viewpoints “reflecting” the universe internally, each PoliePuter here interacts through shared, physically grounded fields of light and sound—co-creating an environment that every agent partially ‘mirrors,’ yet helps define.)*
+*(Note: In contrast to Locke’s though experiment of a mind as a camera confined to receive external images, these loops are modelled as agents that actively emit signals that reshape the scene, while simultaneously reinterpreting the feedback. Likewise, where Leibniz’s monadology envisioned isolated viewpoints “reflecting” the universe internally, each PoliePuter here interacts through shared, physically grounded informational fields of light and sound—co-creating an environment that every agent partially ‘mirrors,’ yet helps define.)*
 
 ------
 
@@ -32,7 +37,4 @@ Beneath these functionalities lies the PoliePuter, which can learn mappings from
 
 A PolieBot arises when the PoliePuter’s intelligence is combined with the Truth Beam, Limager, and Reality Transform. In networks, multiple PolieBots [collaborate or compete](cryptography.md), sharing data and verifying recorded outputs. Privacy-preserving methods (secure multiparty computation, differential privacy, etc.) and specialized encoding (e.g., [DiffDazz](reality_encryption.md) for non-destructive competition) foster decentralized consensus and secure communication. Here, the physical environment itself enforces trust—agents must adhere to actual optical or acoustic laws and are anchored to specific physical substrates—ecnouraging resilient, human-aligned cooperation.
 
-
-
 The provenance of PolieBotics is discussed at https://Poliebotics.com or ipfs://QmP8JDfeBCunq4VQ8f6XUbiLJK55dG9jLav7k5q2HpnmxS on IPFS. This demo is produced by feeding theory and code to ChatGPT and asking for summaries. Apologies for any error.
-The demonstration hardware comprises a DLP 4750LC RGB Super Focus/Contrast 1000 lumens - ON AXIS projection emitting a hardware signal triggering an Imaging Source DFK 38UX540 with a 16mm focal-length lens.
