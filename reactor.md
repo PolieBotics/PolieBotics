@@ -1,27 +1,9 @@
+### Orb Reactor based Truth Beam Verification
 
 ---
+In this architecture, we use a **second-stage projector-reactor-camera loop** to verify data originating from an existing **projector-scene-camera** system. Concretely, the original system—sometimes referred to as a “Truth Beam” or scene pipeline—emits signals (e.g., structured noise) into a physical environment and captures the resulting images as evidence of authenticity. Our new **orb reactor** then takes these emitted-and-recorded outputs as inputs into two separate projectors (Scene_Emission_Signal vs. Orb_Emission_Signal), merges them within an optical resonance chamber, and feeds the resulting combined image to a camera for classification. A **discriminator** learns to label the combined capture as genuinely matching or suspicious (fake), while **reinforcement-learning (RL) agents** adapt the two projector signals to improve the realness classification score.
 
-## **High-Level Explanation (English)**
-
-We have two projector inputs feeding an optical **orb reactor**, from which a single camera capture is taken each iteration:
-
-1. **RL Agents for Projectors**  
-   - **EmissionAgent** outputs an **Emission_Signal**, and  
-   - **RecordingAgent** outputs a **Recording_Signal** from another projector-scene-camera system (e.g. a Truth Beam recording.)
-   These signals physically project into the reactor, generating the **Real_Capture** from the camera.  
-   - Each RL agent updates its policy based on how “real” the final camera capture appears to a **Discriminator**.
-
-2. **GAN for Digital Fakes**  
-   - A **Generator** produces a **Fake_Capture** from random noise.  
-   - The **Discriminator** tries to classify **Real_Capture** vs. **Fake_Capture**.  
-   - **Generator** and **Discriminator** update via standard backprop, purely in software.
-
-3. **Adversarial + RL Loop**  
-   - In each training “episode,” the RL agents choose new projector-scene-camear emission&recording signals.  
-   - The environment merges these signals via the orb reactor, the camera sees the result, and the Discriminator scores the real capture as real or not.  
-   - Meanwhile, the Generator tries to fool the Discriminator with a synthetic fake.  
-   - RL Agents receive rewards if the Discriminator finds the real camera capture convincingly “real.”  
-   - Over many iterations, both the RL agents learn how to produce more “authentic” real captures, and the Discriminator (along with the Generator) becomes more robust.
+From a machine learning standpoint, this approach bridges **reinforcement learning** and **adversarial training** in a real-world optical domain. The RL agents generate physically projected signals—one derived from the original projector-scene-camera data (“scene emission”), another specialized for the orb reactor (“orb emission”). These signals are then projected into the resonance chamber, creating a complex, high-dimensional transformation of the input data. A single camera captures the chamber’s output, which the discriminator uses for real/fake judgements. Meanwhile, a digital **generator** fabricates “fake” captures, aiming to fool the discriminator in standard GAN (Generative Adversarial Network) fashion. Because we cannot backpropagate through real optical physics, the RL agents rely on scalar rewards (e.g., the discriminator’s confidence that the real capture is real) to iteratively refine their emission policies. Over many training episodes, both the RL policies and the adversarial components co-evolve: the RL signals become more effective at exposing authenticity or anomalies, and the GAN’s generator/discriminator pair learns an increasingly robust boundary between real and fake samples. This synergy offers a flexible framework for advanced verification pipelines that link purely digital adversarial learning with real-world optical transformations.
    - No guarentees are made regarding the utility of this system. It has not yet been stably implemented.
 
 ---
