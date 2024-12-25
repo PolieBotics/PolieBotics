@@ -56,7 +56,7 @@ By default, we assume an **optical resonance cavity**—a mirrored enclosure (po
 
 1. **Empirical Transfer Function**: The cavity’s multi-bounce environment can be modeled as a “transfer layer” that merges signals physically. No precise mechanical alignment is strictly required if the system remains stable during operation.  
 2. **Spectral Filtering**: Pre-transforming the input via FFT or wavelet (digitally or with additional optical steps) and then feeding it into the cavity allows for partial frequency or wavelet filtering.  
-3. **Nonlinear Enhancements**: Curved or partially transmissive media can introduce mild nonlinearities, potentially emulating activation functions (though this remains a more speculative direction).
+3. **Nonlinear Enhancements**: Curved or partially transmissive media can introduce mild or strong nonlinearities, potentially emulating activation functions (though this remains a more speculative direction).
 
 Because the cavity approach is fully data-driven, slight hardware imperfections or drift can be learned and corrected over time, relying on synchronization, stable reflectivity, and consistent geometry.
 
@@ -68,7 +68,7 @@ Because the cavity approach is fully data-driven, slight hardware imperfections 
    - Rolling-shutter cameras pair well with scanning projectors, each line capturing a time-summed intensity.  
    - Global-shutter cameras match global-refresh projectors, capturing the entire weighting pattern at once.  
 2. **Hardware Scaling**  
-   - Multi-projector or micro-LED-based solutions scale the optical summation concept to large feature maps or wide FC layers, but mechanical constraints (e.g., lens misalignment) remain.  
+   - Multi-projector or micro-LED-based solutions scale the optical summation concept to large feature maps or wide FC layers, but mechanical constraints remain.  
 3. **Reflective Losses**  
    - Each bounce in the cavity attenuates some portion of the signal, requiring brighter sources or more reflective coatings.  
 4. **Empirical Machine Learning**  
