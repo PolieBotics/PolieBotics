@@ -2,6 +2,8 @@
 
 #### **CryptographicCommunication.pseudo**
 
+In this conceptual cryptographic pipeline, **Alice** and **Bob** work together to pass messages securely while **Eve** tries to intercept them. A learned “public key generation” network creates public keys from private keys, so the entire encryption–decryption process is differentiable. Each agent (Alice, Bob, Eve) sees shared environment data—for example, real-time camera captures—to inject additional, ephemeral complexity into the encryption. During training, Alice and Bob jointly minimize Bob’s decryption error while maximizing Eve’s, and Eve attempts to lower her own error. By also optimizing the public key generator to reduce Bob’s loss, the system co-evolves encryption strategies resistant to Eve’s partial observations. While not a real-world cryptographic scheme, this approach shows how learned key production and adversarial objectives can be fused into an end-to-end, trainable secure-communication framework.
+
 **Description:**
 Current Multi-Agent systems  with higher levels of reliability contain hard-coded function, but the ultimate goal is to make functional fully-differentiable systems. This toy model implements a stylized cryptographic communication setup in which **Alice** and **Bob** cooperate to exchange messages securely, while **Eve** tries to intercept them. A **PublicKeyGenModel** is also trained to produce public keys given a private key, thus adding an additional trainable component to the system.
 
