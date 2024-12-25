@@ -5,6 +5,7 @@
 
 **Conceptual Overview**  
 Alice, Bob, and Eve share real-time environment data (e.g. images) for ephemeral encryption. **Alice** encrypts a plaintext using a trainable **PublicKeyGenModel** that maps private keys to public keys, while **Bob** attempts to decrypt from another environment snapshot, and **Eve** eavesdrops with only partial data. Alice and Bob jointly minimize Bob’s decryption loss and maximize Eve’s, while Eve tries to minimize her own loss.
+The security is potentially illusory (or the result of relative physical positions); the system is for conceptual, differentiable cryptographic modeling and fun.
 
 ```pseudo
 BEGIN CryptographicCommunication
@@ -116,6 +117,3 @@ END CryptographicCommunication
 
 3. **Public Key Generation**  
    - A network (`PUBLIC_KEY_GEN_MODEL`) learns how to produce *cooperative* keys that benefit Bob’s decryption specifically.
-
-4. **Practical Limits**  
-   - Real security remains purely illusory; the system is for conceptual, differentiable cryptographic modeling.
