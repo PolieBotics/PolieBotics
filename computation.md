@@ -46,7 +46,7 @@ For a small fully connected (FC) layer—say an 8×8 MNIST digit connected to 64
 - **Scanning Projectors**: If each row needs eight projectors (one per neuron across that row), the entire 8×8 → 64 mapping would demand 64 such scanning channels. Each projector sequentially modulates the relevant row pixel intensities. A rolling-shutter camera integrates over time, summing row-by-row contributions.  
   - **Practical Challenge**: 64 projectors is obviously cumbersome, but feasible as a conceptual demonstration of photonic summation.  
 - **Single 1080p Projector with Global Refresh**: A micro-LED device that can set all 1080p pixels simultaneously, combined with a global-shutter camera, can handle each neuron’s weighting in parallel. In one frame, each pixel of the projector encodes the product of an input pixel × that neuron’s weight. The camera sees the integrated sum per neuron in a single exposure.  
-  - **High Throughput**: A single pass can compute an entire 1080p-scale FC layer, if properly rasterized or tiled.
+  - **High Throughput**: A single pass can compute an entire 1080p-scale FC layer.
 
 ---
 
