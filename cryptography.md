@@ -44,10 +44,8 @@ BEGIN CryptographicCommunication
         # (d) Agents produce encryption signals
         #     Alice uses PLAINTEXT+PUBLIC_KEY+env
         SIG_ALICE = AGENT_MODEL_ALICE(PLAINTEXT, PUBLIC_KEY, CAM_IMG_ALICE)
-
-        #     Bob/Eve initially produce their own signals (e.g. placeholders)
-        SIG_BOB = AGENT_MODEL_BOB(PRIVATE_KEY, CAM_IMG_BOB)  # output only
-        SIG_EVE = AGENT_MODEL_EVE(CAM_IMG_EVE)               # output only
+        SIG_BOB = AGENT_MODEL_BOB(PRIVATE_KEY, CAM_IMG_BOB) 
+        SIG_EVE = AGENT_MODEL_EVE(CAM_IMG_EVE)   
 
         # (e) Project each signal into the environment
         ProjectSignal(SIG_ALICE)
@@ -120,6 +118,4 @@ END CryptographicCommunication
    - A network (`PUBLIC_KEY_GEN_MODEL`) learns how to produce *cooperative* keys that benefit Bob’s decryption specifically.
 
 4. **Practical Limits**  
-   - The environment data acts like a one-time pad—somewhat ephemeral. Real security remains purely illustrative; the system is for conceptual, differentiable cryptographic modeling.
-
-Overall, this pseudo-code highlights a *two-phase capture* structure enabling Bob and Eve to reacquire the scene for final decryption—further emphasizing how ephemeral context complicates eavesdropping attempts.
+   - Real security remains purely illusory; the system is for conceptual, differentiable cryptographic modeling.
