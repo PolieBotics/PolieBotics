@@ -1,3 +1,5 @@
+Below is a revised pseudocode that highlights **projector-signal naming** at each stage and makes it clear how reinforcement-learning (RL) agents continuously drive the real projector–scene–camera loop. The environment’s orb reactor merges the RL-chosen projector signals, producing a camera capture that competes with a fake image in an adversarial (GAN) framework.
+
 ---
 
 ## **High-Level Explanation (English)**
