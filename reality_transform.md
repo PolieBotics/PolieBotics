@@ -1,36 +1,14 @@
-**Limager: Emission–Recording Pairs for NeRF-Based Scene Reconstruction**  
-We present a prototype “Limager” system that extends Neural Radiance Fields (NeRF) to handle projector–camera loops, jointly optimizing camera calibration and scene structure from unsupervised image pairs. Unlike standard NeRF pipelines, which rely on passive imagery, the Limager includes an *emission* component—light patterns actively projected into the environment—alongside the captured images. These emission–recording pairs drive an end-to-end training objective in which the model infers both scene geometry and appearance. 
+**Short High-Level Explanation**
 
-In practice, *Limager* automatically adjusts camera intrinsics and extrinsics throughout training, aided by an onboard Inertial Measurement Unit (IMU) that can provide coarse prior estimates of pose. While current hardware is tested only in small-scale indoor settings with limited stability, the underlying approach generalizes readily to larger scenes and more advanced machine learning methods (e.g., semantic labeling, instance segmentation). The essential pipeline is:
+This pipeline demonstrates a *closed-loop projector–camera training framework* that captures, learns, and continually refines how images are projected and perceived. First, the **DatasetRecording** phase collects matched pairs of known projection signals and their corresponding camera captures. Next, **TrainGenerator** uses these pairs to teach a model to predict which projection originally produced each captured image—essentially inverting the environmental transformations introduced by optics and scene variation. 
 
-1. **Data Acquisition**  
-   *Emission signals* (light patterns) are projected into the scene; a camera captures each *recording*. This forms a set of \((\text{emission}, \text{recording})\) pairs, implicitly capturing scene geometry, reflectance, and the projector’s influence on intensity and color.
-
-2. **Camera and NeRF Initialization**  
-   The system initializes a NeRF model (parameterized by a small neural network) plus camera parameters (intrinsics/extrinsics for each frame). The IMU data helps seed camera pose estimates but is optional.
-
-3. **Joint Training**  
-   For each emission–recording pair, the method:
-   - **Generates Rays:** Using the camera intrinsics/extrinsics, it constructs pixel-wise rays.  
-   - **NeRF Rendering:** The model predicts densities and colors per sampled ray, incorporating the emission features to account for projector-induced illumination.  
-   - **Loss Computation:** The rendered output is compared to the real captured image (e.g., mean squared error).  
-   - **Optimization:** The network and camera parameters are updated via gradient-based methods.  
-
-4. **Self-Calibration & Reconstruction**  
-   Over many iterations, the camera extrinsics converge to align with the IMU or other pose constraints, while the NeRF’s weights capture the scene’s spatial structure and reflectance properties.  
-
-5. **Evaluation**  
-   A typical metric is PSNR, measured between the rendered scene from the learned model and the actual camera captures. The final model can synthesize novel viewpoints, or re-render the scene under different emission patterns.
-
-Although our *Limager* prototype remains limited in scale, it illustrates how *any* machine learning or classification approach can be interwoven with projector–camera loops. Emission signals provide additional control and supervision—potentially enabling faster convergence, improved geometry, or domain-specific tasks (e.g., 3D labeling, defect detection). By wrapping NeRF or other neural pipelines in a physically interactive setup, we move toward richer, self-calibrating systems for real-world scene understanding.
+In **ContinuousProcessing**, we deploy that trained generator live, optionally styling its output before re-projecting, creating a perpetual feedback cycle. The system is then extended via **TrainModelWithTextPrompt**, adding textual constraints (and optical flow smoothing) so the generator can fuse semantic goals with accurate emission predictions. Finally, **ContinuousFineTuning** distributes this process across multiple devices, with each generator incrementally updating its parameters in real time and optionally sharing knowledge to maintain coherence across the entire network. Together, these components illustrate an adaptive, multi-modal pipeline capable of learning scene-aware transformations, text-guided re-projections, and real-time multi-device coordination.
 
 1. **DatasetRecording** - capturing images for each known projection signal.
 2. **TrainGenerator** - training a model to predict projection signals from captured images.
 3. **ContinuousProcessing** - continuously capturing images and emitting styled outputs.
 4. **TrainModelWithTextPrompt** - an extended training loop that merges text prompts, emissions, and optical flow.
 5. **ContinuousFineTuning** - real-time continuous fine-tuning across multiple devices.
-
-All sections use a consistent approach (similar to your previous pseudocode style). Use them as conceptual outlines for your actual implementation.
 
 ------
 
