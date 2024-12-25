@@ -7,7 +7,7 @@ We have two projector inputs feeding an optical **orb reactor**, from which a si
 
 1. **RL Agents for Projectors**  
    - **EmissionAgent** outputs an **Emission_Signal**, and  
-   - **RecordingAgent** outputs a **Recording_Signal**.  
+   - **RecordingAgent** outputs a **Recording_Signal** from another projector-scene-camera system (e.g. a Truth Beam recording.)
    These signals physically project into the reactor, generating the **Real_Capture** from the camera.  
    - Each RL agent updates its policy based on how “real” the final camera capture appears to a **Discriminator**.
 
@@ -17,11 +17,12 @@ We have two projector inputs feeding an optical **orb reactor**, from which a si
    - **Generator** and **Discriminator** update via standard backprop, purely in software.
 
 3. **Adversarial + RL Loop**  
-   - In each training “episode,” the RL agents choose new projector signals.  
+   - In each training “episode,” the RL agents choose new projector-scene-camear emission&recording signals.  
    - The environment merges these signals via the orb reactor, the camera sees the result, and the Discriminator scores the real capture as real or not.  
    - Meanwhile, the Generator tries to fool the Discriminator with a synthetic fake.  
    - RL Agents receive rewards if the Discriminator finds the real camera capture convincingly “real.”  
    - Over many iterations, both the RL agents learn how to produce more “authentic” real captures, and the Discriminator (along with the Generator) becomes more robust.
+   - No guarentees are made regarding the utility of this system. It has not yet been stably implemented.
 
 ---
 
