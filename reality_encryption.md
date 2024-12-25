@@ -1,6 +1,6 @@
-Reality encryption constitutes the generation of signals more easily reversed by allies than adversaries e.g. the generation of Perlin noise from a shared key, and the use of a model trained on synthetic data or hardware-channel separated data to reverse this obfuscation.
+Reality encryption constitutes the generation of signals more easily reversed by allies than adversaries e.g. the generation of Perlin noise from a shared key, and the use of a model trained on synthetic data or hardware-channel separated data to reverse this obfuscation. The projection of this Perlin noise obscures in a manner more easily reversed by an ally with a shared key.
 
-Below is an **iterative reality-encryption** pseudocode in which new keys and plaintexts are continually generated. Each iteration, the agents project signals, capture the display (with the new plaintext plus everyone’s obfuscations), guess the plaintext, and update their models
+Below is an differentiable reality-encryption pseudocode in which new keys and plaintexts are continually generated. Each iteration, the agents project signals, capture the display (with the new plaintext plus everyone’s obfuscations), guess the plaintext, and update their models. This is very much in the "toy" category, with no particular indication of stability or utility.
 
 ------
 
