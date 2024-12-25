@@ -1,6 +1,8 @@
 ------
 
-#### High-Level Explanation of The Training of an Orb Reactor
+#### High-Level Explanation of The Training of an Orb Reactor for Truth Beam Verification
+
+This is a two-input orb reactor, with the emissions and recordings corresponding to a Truth Beam recording being processed using a PoliePuter with two projector inputs and one camera output.
 
 1. **Physical Emitter/Recorder as RL Agents**
    - Because the physical projection process involves real hardware (the “chamber” plus a camera), it’s hard to backpropagate gradients directly through the environment.
