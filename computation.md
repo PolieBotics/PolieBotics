@@ -21,8 +21,8 @@ This principle generalizes to **upsampling** by inverting the ratio: the project
 The same 2×2 → 4×1 arrangement supports **convolution**:
 
 1. **Patch Extraction**: A sliding 2×2 kernel region (in the original 1080p input) is reshaped into 4 projector pixels.  
-2. **Weight Encoding**: Each of these 4 pixels is modulated by the kernel’s partial weight.  
-3. **Optical Summation**: Inside the resonance cavity, light bounces multiple times, merging the 4 intensities into one camera pixel that approximates the convolved output for that kernel location.  
+2. **Weight Encoding**: Each of these 4 pixels is modulated by serial physical interaction with the "kernel" of the cavity.
+3. **Temporal Summation**: The weights are summed across time in the camera pixel, but do not interact directly.
 4. **Scan Over the Image**: Repeatedly shift the 2×2 window to generate the next 4×1 projector patch, capturing each convolved output pixel in sequence.
 
 Thus, one can systematically rasterize 2D kernel patches into 4 projector pixels, with the camera’s single-pixel capture acting as the summed convolution result.
@@ -33,8 +33,8 @@ Thus, one can systematically rasterize 2D kernel patches into 4 projector pixels
 
 To process higher throughput or accommodate larger feature maps, multiple synchronized projectors can inject parallel data into the same resonance cavity:
 
-- **4 × 1080p Projectors**: Instead of a single 2160p output for downsampling or convolution, four 1080p devices can each handle part of the image, merging inside the cavity to form a single, wide-area summation.  
-- **Spatial Summation**: From the camera’s perspective, these partial signals appear as a single integrated intensity, effectively “adding” the multiple projector outputs in real time.  
+- **4 × 1080p Projectors**: Instead of a single 2160p output for downsampling or convolution, four 1080p devices can each handle part of the kernel, merging inside the cavity to form a single, wide-area summation.  
+- **Spatial Summation**: From the camera’s perspective, these partial signals appear as a single integrated intensity, effectively “adding” the multiple projector outputs in real time.  Inside the resonance cavity, light bounces multiple times, merging the 4 intensities into one camera pixel that approximates the convolved output for that kernel location.
 - **Reduced Per-Projector Complexity**: Each projector can run at standard 1080p settings, simplifying hardware design, while still achieving combined high-resolution summation in free space.
 
 ---
