@@ -22,7 +22,7 @@ The present disclosures span different stages of development: from functioning p
 ### [Truth Beam](truth_beam.md) (Secure Recording) ([Example Code](https://github.com/PolieBotics/TruthBeam))
 
 The Truth Beam embeds cryptographic elements—structured noise or one-way transforms—into emitted signals, making each recorded capture tamper-evident. Machine learning models are trained to ensure forgeries or manipulations become detectable. This effectively turns physical space into a cryptographically anchored ledger, authenticating data about real-world events. 
-An example Truth Beam [https://ipfs.io/ipfs/bafybeibbapmogu2bro3ettoilge6bp5lic3u2mdohvbutgixnee463kmga](dataset) secured using the Rootstock blockchain is available on InterPlanetary File System (IPFS.)
+An example Truth Beam [dataset](https://ipfs.io/ipfs/bafybeibbapmogu2bro3ettoilge6bp5lic3u2mdohvbutgixnee463kmga) secured using the Rootstock blockchain is available on InterPlanetary File System (IPFS.)
 
 ### [Limager](limager.md) (3D Scanner and Semantic Analysis)
 
