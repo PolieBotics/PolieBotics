@@ -9,7 +9,7 @@ The **PolieBotics** suite for projector–camera systems arose from the author�
 The demonstration hardware, **PolieProboscis®**, pairs an **EKB Technologies Ltd**–manufactured **RGB DLP 4750LC** projector (1000 lumens, high-contrast/focus, on-axis) sending hardware triggers to an **Imaging Source DFK 38UX540** camera fitted with an **Edmund Optics 16 mm f/2.8 HPi+ Lens (1.2")**. Future versions will use and intertial measurement unit (IMU) which will be specified as appropriate. A draft 3D printable [model](PolieProboscis_ALPHA_NEEDS_FIX.tar.xz) is available for replication and slated for refinement.
 
 <br>
-<img src="PolieProboscis.png" alt="PolieProboscis Prototype" title="PolieProboscis Prototype">
+<img src="PolieProboscis.png" alt="PolieProboscis Prototype" title="PolieProboscis Prototype. Background artified to hide mess.">
 
 ### Abstract
 This invention integrates projectors, cameras, and the physical environment into a continuous feedback loop guided by machine learning and cryptographic protocols. By treating the environment itself as a computational medium, it supports tamper-evident recording (**Truth Beam®**), high-density 3D scanning and labeling (**Limager®**), and immersive son-et-lumière transformations (**Reality Transform®**). These capabilities converge upon a core computational engine, the **PoliePuter®**, which paves the way for multi-agent **PolieBotics®**—a framework uniting secure data handling, privacy-preserving collaboration, and real-time physical adaptation.  
