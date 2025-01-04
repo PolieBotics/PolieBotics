@@ -6,7 +6,7 @@
 
 The **PolieBotics** suite for projector–camera systems arose from the author’s independent experimentation, culminating in a “spaghetti” assembly of Dockerized third-party doctoral code running over a custom network backend. While highly instructive, it never achieved top-tier performance. More recently, large language models (such as ChatGPT) have been used to parse, explain, and re-generate portions of this ad-hoc toolkit; though not guaranteed error-free or fully equivalent to meticulously optimized components, this approach allows the public release of illustrative models and rationales.
 
-The demonstration hardware, **PolieProboscis®**, pairs an **EKB Technologies Ltd**–manufactured **RGB DLP 4750LC** projector (1000 lumens, high-contrast/focus, on-axis) sending hardware triggers to an **Imaging Source DFK 38UX540** camera fitted with an **Edmund Optics 16 mm f/2.8 HPi+ Lens (1.2")**. Future versions will use and intertial measurement unit (IMU) which will be specified as appropriate. A draft physical [model](PolieProboscis_ALPHA_NEEDS_FIX.tar.xz) of this setup is available and slated for refinement.
+The demonstration hardware, **PolieProboscis®**, pairs an **EKB Technologies Ltd**–manufactured **RGB DLP 4750LC** projector (1000 lumens, high-contrast/focus, on-axis) sending hardware triggers to an **Imaging Source DFK 38UX540** camera fitted with an **Edmund Optics 16 mm f/2.8 HPi+ Lens (1.2")**. Future versions will use and intertial measurement unit (IMU) which will be specified as appropriate. A draft 3D printable [model](PolieProboscis_ALPHA_NEEDS_FIX.tar.xz) of this setup is available and slated for refinement.
 
 <br>
 <img src="PolieProboscis.png" alt="PolieProboscis Prototype" title="PolieProboscis Prototype">
