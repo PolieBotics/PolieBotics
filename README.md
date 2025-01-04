@@ -34,8 +34,9 @@ The Reality Transform superimposes dynamic, adaptive projections onto surfaces�
 ### The [PoliePuter](computation.md) (Computational Core) (Highly Experimental)
 
 Beneath these functionalities lies the **PoliePuter**: an analog or hybrid analog–digital system hypothesized to capable of high performance in processing **convolutions, down/upsampling,** and even **fully connected layers** through environment-based optical transformations (e.g., reflections, diffraction). While it is intended to ultimately underping **PolieBotics**, e.g. in for use in [recording verification](reactor.md) it also aspires to **universal optical computation** well beyond secure video or immersive rendering. However, **unlike the other components**, the PoliePuter’s **practical viability remains unproven**, existing largely as a proof-of-concept with limited stable hardware support. Future investigation will center on improving **resonance chambers** and emitter–recorder coupling to achieve more reliable performance.
-------
+
 ### Multi-Agent and Experimental
+
 Will be filled out later.
 
 ------
