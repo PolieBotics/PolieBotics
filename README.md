@@ -43,7 +43,7 @@ Will be filled out later.
 
 #### Whitepaper
 
-The provenance and more advanced theory of PolieBotics is disclosed at https://Poliebotics.com on IPFS.
+The provenance and more advanced theory of PolieBotics is disclosed in the whitepaper at https://Poliebotics.com on IPFS.
 
 
 ------
