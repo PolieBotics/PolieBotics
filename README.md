@@ -31,7 +31,7 @@ By projecting and analyzing textures, the Limager constructs detailed 3D represe
 
 The Reality Transform superimposes dynamic, adaptive projections onto surfaces—whether people, buildings or household items—generating vibrant son-et-lumière experiences. Machine learning and sensor feedback let the system continuously refine brightness, color, and patterns, turning physical spaces into interactive storytelling platforms.
 
-### Theoretical and Experimental Work
+### Experimental Work and Theoretical Background
 
 #### The [PoliePuter](computation.md) (Computational Core) (Highly Experimental)
 
