@@ -31,14 +31,22 @@ By projecting and analyzing textures, the Limager constructs detailed 3D represe
 
 The Reality Transform superimposes dynamic, adaptive projections onto surfaces—whether people, buildings or household items—generating vibrant son-et-lumière experiences. Machine learning and sensor feedback let the system continuously refine brightness, color, and patterns, turning physical spaces into interactive storytelling platforms.
 
-### The [PoliePuter](computation.md) (Computational Core) (Highly Experimental)
+### Theoretical and Experimental Work
+
+#### The [PoliePuter](computation.md) (Computational Core) (Highly Experimental)
 
 Beneath these functionalities lies the **PoliePuter**: an analog or hybrid analog–digital system hypothesized to capable of high performance in processing **convolutions, down/upsampling,** and even **fully connected layers** through environment-based optical transformations (e.g., reflections, diffraction). While it is intended to ultimately underping **PolieBotics**, e.g. in for use in [recording verification](reactor.md) it also aspires to **universal optical computation** well beyond secure video or immersive rendering. However, **unlike the other components**, the PoliePuter’s **practical viability remains unproven**, existing largely as a proof-of-concept with limited stable hardware support. Future investigation will center on improving **resonance chambers** and emitter–recorder coupling to achieve more reliable performance.
 
-### Multi-Agent and Experimental
+#### Multi-Agent
 
 Will be filled out later.
 
+#### Whitepaper
+
+The provenance and more advanced theory of PolieBotics is disclosed at https://Poliebotics.com on IPFS.
+
+
 ------
+This demo is produced by feeding patent text and code to ChatGPT and asking for summaries. Apologies for any errors generate in this process. The author will be working to tidy this work and produce more.
+
 The present work, including PolieProboscis®, is patent pending (PCT filing accepted), and all novel terms referenced herein are trademarked. Patent license will be granted for research and personal use.
-The provenance of PolieBotics is discussed at https://Poliebotics.com on IPFS. This demo is produced by feeding patent text and code to ChatGPT and asking for summaries. Apologies for any errors generate in this process. The author will be working to tidy this work and produce more.
