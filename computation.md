@@ -1,6 +1,7 @@
 ### Optical Computation with Resonance-Cavity Projector–Camera Architectures**
 
 This work explores the use of an **optical resonance cavity** in tandem with projector–camera systems for core neural-network operations (e.g., convolution, down/upsampling, and limited fully connected layers). By physically summing or filtering light, we sidestep many of the digital multiply-accumulate (MAC) operations typical of deep learning, offloading them into free space. Although early prototypes used unaligned or unstable hardware, the approach treats the entire projector–cavity–camera pipeline as an empirically learned transform, potentially enabling large-scale photonic computations.
+The core concept is the synchronisation of any number of projector/camera sets with scanning projectors paired with synchronised rolling shutter cameras for convolution and up/down samping, and global refresh projectors (e.g. micro-LED array) paired with global shutter cameras for Fully Connected Layers.
 
 ---
 
