@@ -27,7 +27,7 @@ An example Truth Beam [dataset](https://ipfs.io/ipfs/bafybeibbapmogu2bro3ettoilg
 
 By projecting and analyzing textures, the Limager constructs detailed 3D representations and performs semantic labeling—detecting objects, faces, or other features. Instead of static image capture, it evolves as a real-time scene analysis tool, adapting its patterns in response to the environment and user needs.
 
-### [Reality Transform](reality_transform.md) (Son-et-Lumière Video Mapping)
+### [Reality Transform](reality_transform.md) (Son-et-Lumière Video Mapping) ([Example Code](https://github.com/PolieBotics/RealityTransform))
 
 The Reality Transform superimposes dynamic, adaptive projections onto surfaces—whether people, buildings or household items—generating vibrant son-et-lumière experiences. Machine learning and sensor feedback let the system continuously refine brightness, color, and patterns, turning physical spaces into interactive storytelling platforms.
 
@@ -43,7 +43,7 @@ Will be filled out later.
 
 #### Whitepaper
 
-The provenance and more advanced theory of PolieBotics is disclosed in the whitepaper at https://Poliebotics.com on IPFS.
+The provenance and more advanced theory of PolieBotics is disclosed in the whitepaper video at https://Poliebotics.com on IPFS.
 
 
 ------
